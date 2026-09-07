@@ -1,0 +1,18 @@
+{
+  "name": "Jadwal Belajar",
+  "short_name": "Jadwal",
+  "description": "Jadwal Belajar di MAN 1 Kota Cirebon",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4285f4",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logoman1.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jadwal Belajar di MAN 1 Kota Cirebon" />
+    <meta name="theme-color" content="#4285f4" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <title>Jadwal Belajar di MAN 1 Kota Cirebon</title>
+
+    <!-- Ikon Aplikasi -->
+    <link rel="icon" type="image/svg+xml" href="logoman1.svg" />
+    <link rel="apple-touch-icon" href="logoman1.svg" />
+
+    <!-- Link ke Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #ffffff;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe
+      src="https://script.google.com/macros/s/AKfycbwMxR_umx2rOTyOOGeZComD0n_rcGqVOiUjf1vr8dDeBNz4eHkT1x_b_C7A6_2d1j-H/exec"
+      title="Jadwal Belajar di MAN 1 Kota Cirebon"
+    ></iframe>
+
+    <script>
+      // Mendaftarkan Service Worker
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./sw.js")
+            .then((reg) => console.log("SW terdaftar!", reg.scope))
+            .catch((err) => console.error("Gagal daftar SW:", err));
+        });
+      }
+    </script>
+  </body>
+</html>
